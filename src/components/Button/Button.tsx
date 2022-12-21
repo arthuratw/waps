@@ -7,6 +7,4 @@ interface ButtonProps{
 
 export function Button({ variant = 'primary'}: ButtonProps) {
   const auth = useAuth()
-
-  return <ButtonContainer variant={variant} onClick={() => auth.singUp('bryan@teste.com', '123456789')}>Criar conta</ButtonContainer>
 }

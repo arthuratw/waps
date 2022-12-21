@@ -12,7 +12,7 @@ interface EmployeersType {
     name: string
     cpf: string
     occupation: string
-    sector: string
+    // sector: string
 }
 
 export function EmployeerList() {
@@ -41,7 +41,7 @@ export function EmployeerList() {
                         name: document.data().name,
                         cpf: document.data().cpf,
                         occupation: document.data().occupation,
-                        sector: docSnap.data().sectorName,
+                        // sector: docSnap.data().sectorName,
                     }
 
                     employeers.push(data)
@@ -83,7 +83,7 @@ export function EmployeerList() {
                             <Th>{data.name}</Th>
                             <Th>{data.cpf}</Th>
                             <Th>{data.occupation}</Th>
-                            <Th>{data.sector}</Th>
+                            {/* <Th>{data.sector}</Th> */}
                             <Th>
                                 <Button> <Pen size={24} color="#76AB72" /> </Button>
                                 <Button> <Trash size={24} color="red" /> </Button>
